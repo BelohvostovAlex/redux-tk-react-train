@@ -1,4 +1,5 @@
 import React from 'react'
+import { PostItem } from './PostItem'
 
 export const Post = () => {
   return (
@@ -6,7 +7,7 @@ export const Post = () => {
         <h1 className='post__title'>Redux Toolkit Async Thunk</h1>
         <button className='post__btn'>Get posts</button>
         <ul>
-            <li>First post</li>
+            <PostItem />
         </ul>
     </div>
   )
