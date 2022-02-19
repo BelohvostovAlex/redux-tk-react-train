@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.App {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;

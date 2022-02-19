@@ -45,3 +45,15 @@
 .post__btn {
     margin-bottom: 10px;
 }
+
+.comments {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.commentItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

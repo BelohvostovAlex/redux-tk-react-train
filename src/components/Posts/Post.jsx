@@ -6,6 +6,7 @@ import { PostItem } from './PostItem'
 export const Post = () => {
   const dispatch = useDispatch()
   const {posts} = useSelector(state => state.posts)
+  console.log(posts)
   
   return (
     <div className='post'>
