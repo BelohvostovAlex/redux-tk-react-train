@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleCompleteTodo, removeTodo } from '../../features/TodoSlice';
 
-export const TodoItem = ({ id: todoId, title }) => {
+export const TodoItem = ({ id: todoId, title, completed }) => {
   const dispatch = useDispatch();
   const handleToggleTodo = (e, id) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ export const TodoItem = ({ id: todoId, title }) => {
       <button type="submit" className="todo__form_btn" onClick={(e) => handleToggleTodo(e, todoId)}>
         Complete
       </button>
-      <li>{title}</li>
+      <li style={{color: completed? "green" : "black"}}>{title}</li>
       <button type="submit" className="todo__form_btn" onClick={(e) => handleRemoveTodo(e,todoId)}>
         Delete
       </button>

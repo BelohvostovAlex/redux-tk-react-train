@@ -29,7 +29,7 @@ export const Comments = () => {
     <>
       {error && <h1>Whoops... an error</h1>}
       {isLoading && <div>Loading...</div>}
-      <button onClick={handleCreate}>Create post</button>
+      <button style={{display: "block",margin: '0 auto'}} onClick={handleCreate}>Create post</button>
       <ul className='comments'>{comments?.map(comment => <CommentItem key={comment.id} comment={comment} remove={handleRemove} update={handleUpdate}/>)}</ul>
     </>
   )
